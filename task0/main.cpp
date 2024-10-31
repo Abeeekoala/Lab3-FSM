@@ -26,6 +26,16 @@ TEST_F(TestAdd, AddTest)
 TEST_F(TestAdd, AddTest2)
 {
     // Create a test case here. Maybe fail this to see what happens?
+    
+    // [ RUN      ] TestAdd.AddTest2
+    // main.cpp:29: Failure
+    // Expected equality of these values:
+    //   add(5, 4)
+    //     Which is: 9
+    //   3
+    // [  FAILED  ] TestAdd.AddTest2 (0 ms)
+    
+    EXPECT_EQ(add(5, 4), 9);
 }
 
 int main(int argc, char **argv)
