@@ -3,7 +3,7 @@ module top #(
 ) (
     input logic         clk,
     input logic         rst,
-    input logic         N_in,
+    input logic         N_in, // for adjustment
     output logic [7:0]  data_out
 );
 logic fsm_en = 0;
